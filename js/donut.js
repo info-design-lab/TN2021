@@ -32,7 +32,7 @@ var arc1 = d3.svg.arc()
 		.on("mouseover", function(d) {	
 					t.transition().duration(200).style("opacity", 1);
 					
-					t.html("<font size=3>" + "66/191 seats obtained by ADMK" + "</font>").style("left", 100).style("top", 100);
+					t.html("<font size=3>" + "66/191 seats obtained by AIADMK" + "</font>").style("left", 100).style("top", 100);
 					d3.selectAll(".arc, .arc3, .arc4, .arc6, .arc7").attr("fill","rgb(204,204,204)"); 
 		})
 		.on("mouseout", function(d) {				
@@ -60,7 +60,7 @@ var arc3 = d3.svg.arc()
 		svg.append("path").attr("class", "arc3").attr("d", arc3).attr("fill","#ff4d4d")
 		.on("mouseover", function(d) {	
 					t.transition().duration(200).style("opacity", 1);
-					t.html("<font size=3>" + "40.8% of the contested vote share for AIADMK" + "</font>").style("left", 100).style("top", 100);
+					t.html("<font size=3>" + "46.5% of the contested vote share for DMK" + "</font>").style("left", 100).style("top", 100);
 					d3.selectAll(".arc1, .arc4, .arc6, .arc7").attr("fill","rgb(204,204,204)"); 
 		})
 		.on("mouseout", function(d) {				
@@ -76,7 +76,7 @@ var arc4 = d3.svg.arc()
 		svg.append("path").attr("class", "arc4").attr("d", arc4).attr("fill","#33cc33")
 		.on("mouseover", function(d) {	
 					t.transition().duration(200).style("opacity", 1);
-					t.html("<font size=3>" + "41.1% of the contested vote share for DMK" + "</font>").style("left", 100).style("top", 100);
+					t.html("<font size=3>" + "40.5% of the contested vote share for AIADMK" + "</font>").style("left", 100).style("top", 100);
 					d3.selectAll(".arc, .arc3, .arc6, .arc7").attr("fill","rgb(204,204,204)");
 		})
 		.on("mouseout", function(d) {				
@@ -103,7 +103,7 @@ var arc6 = d3.svg.arc()
 		svg.append("path").attr("class", "arc6").attr("d", arc6).attr("fill","#ff8080")
 		.on("mouseover", function(d) {	
 					t.transition().duration(200).style("opacity", 1);
-					t.html("<font size=3>" + "40.8% of the total vote share for AIADMK" + "</font>").style("left", 100).style("top", 100);
+					t.html("<font size=3>" + "37.7% of the total vote share for DMK" + "</font>").style("left", 100).style("top", 100);
 					d3.selectAll(".arc1, .arc4, .arc7").attr("fill","rgb(204,204,204)");
 		})
 		.on("mouseout", function(d) {				
@@ -119,7 +119,7 @@ var arc7 = d3.svg.arc()
 		.on("mouseover", function(d) {	
 					t.transition().duration(200).style("opacity", 1);
 					
-					t.html("<font size=3>" + "39.7% of the total vote share for DMK" + "</font>").style("left", 100).style("top", 100);
+					t.html("<font size=3>" + "33.3% of the total vote share for AIADMK" + "</font>").style("left", 100).style("top", 100);
 					d3.selectAll(".arc, .arc3, .arc6").attr("fill","rgb(204,204,204)");
 		})
 		.on("mouseout", function(d) {				
@@ -159,7 +159,7 @@ var tx = svg.append("text").text("133").attr("x",-15).attr("y",70).attr("font-si
 var tx3 = svg.append("text").text("46.5%").attr("x",-15).attr("y",92).attr("font-size",15).attr("fill","white").attr("transform","rotate(-50)").attr("font-family","Roboto Condensed")
 		.on("mouseover", function(d) {	
 					t.transition().duration(200).style("opacity", 1);
-					t.html("<font size=3>" + "46.5% of the contested vote share for ADMK" + "</font>").style("left", 100).style("top", 100);
+					t.html("<font size=3>" + "46.5% of the contested vote share for DMK" + "</font>").style("left", 100).style("top", 100);
 					d3.selectAll(".arc1, .arc4, .arc6, .arc7").attr("fill","rgb(204,204,204)"); 
 		})
 		.on("mouseout", function(d) {				
@@ -187,7 +187,7 @@ var tx1 = svg.append("text").text("66").attr("x",-15).attr("y",70).attr("font-si
 		.on("mouseover", function(d) {	
 					t.transition().duration(200).style("opacity", 1);
 					
-					t.html("<font size=3>" + "66/191 seats obtained by ADMK" + "</font>").style("left", 100).style("top", 100);
+					t.html("<font size=3>" + "66/191 seats obtained by AIADMK" + "</font>").style("left", 100).style("top", 100);
 					d3.selectAll(".arc, .arc3, .arc4, .arc6, .arc7").attr("fill","rgb(204,204,204)"); 
 		})
 		.on("mouseout", function(d) {				
@@ -202,7 +202,7 @@ var tx1 = svg.append("text").text("66").attr("x",-15).attr("y",70).attr("font-si
 var tx4 = svg.append("text").text("40.5%").attr("x",-15).attr("y",92).attr("font-size",15).attr("fill","white").attr("transform","rotate(50)").attr("font-family","Roboto Condensed")
 		.on("mouseover", function(d) {	
 					t.transition().duration(200).style("opacity", 1);
-					t.html("<font size=3>" + "40.5% of the contested vote share for ADMK" + "</font>").style("left", 100).style("top", 100);
+					t.html("<font size=3>" + "40.5% of the contested vote share for AIADMK" + "</font>").style("left", 100).style("top", 100);
 					d3.selectAll(".arc, .arc3, .arc6, .arc7").attr("fill","rgb(204,204,204)");
 		})
 		.on("mouseout", function(d) {				
@@ -217,7 +217,7 @@ var tx7 = svg.append("text").text("33.3%").attr("x",-15).attr("y",117).attr("fon
 		.on("mouseover", function(d) {	
 					t.transition().duration(200).style("opacity", 1);
 					
-					t.html("<font size=3>" + "33.3% of the total vote share for ADMK" + "</font>").style("left", 100).style("top", 100);
+					t.html("<font size=3>" + "33.3% of the total vote share for AIADMK" + "</font>").style("left", 100).style("top", 100);
 					d3.selectAll(".arc, .arc3, .arc6").attr("fill","rgb(204,204,204)");
 		})
 		.on("mouseout", function(d) {				

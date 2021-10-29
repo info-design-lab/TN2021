@@ -76,27 +76,31 @@
 											
 					});
 
-					var aia = [{val:"AIADMK+",xpos:1200,ypos:27,col:"black",size:"15"},{val:"DMK+",xpos:1200,ypos:48,col:"black",size:"15"},{val:"10",xpos:25,ypos:510, col:"black",size:"15"},{val:"100",xpos:18,ypos:410,col:"black",size:"15"},{val:"1000",xpos:13,ypos:310,col:"black",size:"15"},{val:"10000",xpos:7,ypos:210,col:"black",size:"15"},{val:"100000",xpos:1,ypos:110,col:"black",size:"15"},{val:"10",xpos:1230,ypos:510,col:"black",size:"15"},{val:"100",xpos:1230,ypos:410,col:"black",size:"15"},{val:"1000",xpos:1230,ypos:310,col:"black",size:"15"},{val:"10000",xpos:1230,ypos:210,col:"black",size:"15"},{val:"100000",xpos:1230,ypos:110,col:"black",size:"15"},{val:"Avg. NOTA",xpos:1230,ypos:270,col:"blue",size:"13"}, {val:"VOTES",xpos:8,ypos:260,col:"gray",size:"15"}, {val:"CONSTITUENCIES",xpos:620,ypos:524,col:"gray",size:"15"},{val:"CONSTITUENCY-WISE EFFECT OF THE NOTA", xpos:54,ypos:27,col:"black",size:"18"}, {val:"The chart shows the number of votes that the NOTA votes polled in each constituency in descending order of magnitude. The points above the curve indicate the constituencies where the victory", xpos:54,ypos:50,col:"gray",size:"14"}, {val:"margins are more than the NOTA votes polled, while the points below the curve, vice-versa. The length of the lines indicate the quantum of the difference. Votes along the Y-axis are shown on a", xpos:54,ypos:66,col:"gray",size:"14"},{val:"logarithmic scale to allow for comparison.", xpos:54,ypos:83,col:"gray",size:"14"}, {val:"Hover mouse cursor over the chart to explore constituency details.", xpos:290,ypos:83,col:"#d92b2b",size:"14"}];
-		
-		var rect = svg.append("rect") 
-			.attr("x", 1175) 
-			.attr("y", 15)
-			.attr("width", 15)
-			.attr("height", 15)
-			.attr("fill", "green");
+					var aia = [{val:"DMK+",xpos:1185,ypos:43,col:"black",size:"15"},{val:"AIADMK+",xpos:1185,ypos:68,col:"black",size:"15"},{val:"10",xpos:25,ypos:510, col:"black",size:"15"},{val:"100",xpos:18,ypos:410,col:"black",size:"15"},{val:"1000",xpos:13,ypos:310,col:"black",size:"15"},{val:"10000",xpos:7,ypos:210,col:"black",size:"15"},{val:"100000",xpos:1,ypos:110,col:"black",size:"15"},{val:"10",xpos:1230,ypos:510,col:"black",size:"15"},{val:"100",xpos:1230,ypos:410,col:"black",size:"15"},{val:"1000",xpos:1230,ypos:310,col:"black",size:"15"},{val:"10000",xpos:1230,ypos:210,col:"black",size:"15"},{val:"100000",xpos:1230,ypos:110,col:"black",size:"15"},{val:"Avg. NOTA",xpos:1230,ypos:270,col:"blue",size:"13"}, {val:"VOTES",xpos:8,ypos:260,col:"gray",size:"15"}, {val:"CONSTITUENCIES",xpos:620,ypos:535,col:"gray",size:"15"},{val:"CONSTITUENCY-WISE EFFECT OF THE NOTA", xpos:54,ypos:27,col:"black",size:"18"}, {val:"The chart shows the number of votes that the NOTA votes polled in each constituency in descending order of magnitude. The points above the curve indicate the constituencies where the victory", xpos:54,ypos:50,col:"gray",size:"14"}, {val:"margins are more than the NOTA votes polled, while the points below the curve, vice-versa. The length of the lines indicate the quantum of the difference. Votes along the Y-axis are shown on a", xpos:54,ypos:66,col:"gray",size:"14"},{val:"logarithmic scale to allow for comparison.", xpos:54,ypos:83,col:"gray",size:"14"}, {val:"Hover mouse cursor over the chart to explore constituency details.", xpos:290,ypos:83,col:"#d92b2b",size:"14"}];
+					var aia2 = [{val:"DMK+",xpos:1185,ypos:43,col:"black",size:"15"},{val:"AIADMK+",xpos:1185,ypos:68,col:"black",size:"15"},{val:"10",xpos:25,ypos:510, col:"black",size:"15"},{val:"100",xpos:18,ypos:410,col:"black",size:"15"},{val:"1000",xpos:13,ypos:310,col:"black",size:"15"},{val:"10000",xpos:7,ypos:210,col:"black",size:"15"},{val:"100000",xpos:1,ypos:110,col:"black",size:"15"},{val:"10",xpos:1230,ypos:510,col:"black",size:"15"},{val:"100",xpos:1230,ypos:410,col:"black",size:"15"},{val:"1000",xpos:1230,ypos:310,col:"black",size:"15"},{val:"10000",xpos:1230,ypos:210,col:"black",size:"15"},{val:"100000",xpos:1230,ypos:110,col:"black",size:"15"},{val:"Avg. NOTA",xpos:1230,ypos:290,col:"blue",size:"13"}, {val:"VOTES",xpos:8,ypos:260,col:"gray",size:"15"}, {val:"CONSTITUENCIES",xpos:620,ypos:535,col:"gray",size:"15"},{val:"CONSTITUENCY-WISE EFFECT OF THE NOTA", xpos:54,ypos:27,col:"black",size:"18"}, {val:"The chart shows the number of votes that the NOTA votes polled in each constituency in descending order of magnitude. The points above the curve indicate the constituencies where the victory", xpos:54,ypos:50,col:"gray",size:"14"}, {val:"margins are more than the NOTA votes polled, while the points below the curve, vice-versa. The length of the lines indicate the quantum of the difference. Votes along the Y-axis are shown on a", xpos:54,ypos:66,col:"gray",size:"14"},{val:"logarithmic scale to allow for comparison.", xpos:54,ypos:83,col:"gray",size:"14"}, {val:"Hover mouse cursor over the chart to explore constituency details.", xpos:290,ypos:83,col:"#d92b2b",size:"14"}];
+					//{val:"Avg. NOTA",xpos:1230,ypos:270,col:"blue",size:"13"}
 
 		var rect = svg.append("rect") 
-			.attr("x", 1175) 
-			.attr("y", 35)
+			.attr("x", 1150) 
+			.attr("y", 30)
 			.attr("width", 15)
 			.attr("height", 15)
-			.attr("fill", "red");	
+			.attr("fill", "red");
+
+		var rect = svg.append("rect") 
+			.attr("x", 1150) 
+			.attr("y", 55)
+			.attr("width", 15)
+			.attr("height", 15)
+			.attr("fill", "green");	
 
 		svg.selectAll("text")
-		   .data(aia)
+		   .data(aia2)
+		   .attr("id","label")
 	   	   .enter()
 		   .append("text")
 		   .text(function(d){
+			   	if (d.val == "Avg. NOTA"){d3.select(this).attr("id","avgnota");};
 				return d.val;
 			})
 		   .attr("y", function(d){
@@ -159,7 +163,8 @@
 											d3.select(this).style("stroke", function() {            
 																				if (v5 == "ADMK") {return "green"} 
 																				else if (v5 == "PMK") {return "green"}
-																				else if (v5 == "BJP") {return "green"}  
+																				else if (v5 == "BJP") {return "green"} 
+																				else if (v5 == "AIADMK") {return "green"}      
 																				else { return "red" }
 																			;}).style("stroke-width", 0.7);
 											div.transition().duration(500).style("opacity", 0);	
@@ -454,6 +459,15 @@
 						});
 		}
 
+		function labels_update(label_height){
+			//console.log(A);
+		   d3.selectAll("#avgnota")
+		   .transition() 
+		   .duration(2000)
+	   	   .attr("y", label_height);
+		   
+		}
+
 
 		function drawChart(dataset_nota,axisavg_nota){
 					
@@ -506,7 +520,7 @@
 
 		}
 
-		function drawChart_update(dataset, axisavg_nota) {
+		function drawChart_update(dataset, axisavg_nota,label_height) {
 					
 			//update dots
 			new_data = []
@@ -558,18 +572,20 @@
 
 			drawLineRollover_update(dataset);
 
+			labels_update(label_height);
+
 		}
 
 		drawChart(dataset_nota,axisavg_nota_2021);
 
 		d3.select("#a2").on("click", function() {
 			console.log("2016 data");
-			drawChart_update(dataset_nota_2,axisavg_nota_2016);
+			drawChart_update(dataset_nota_2,axisavg_nota_2016,270);
 		})
 
 		d3.select("#a1").on("click", function() {
 			console.log("2021 data");
-			drawChart_update(dataset_nota,axisavg_nota_2021);
+			drawChart_update(dataset_nota,axisavg_nota_2021,290);
 		})
 
 })
