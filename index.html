@@ -27,12 +27,11 @@
 	
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
-	<link href="css/nouislider.css" rel="stylesheet">
 	<!--SCRIPTS FOR GRAPHS-->
 	<script type="text/javascript" src="js/d3.min.js"></script>
     <script type="text/javascript" src="js/d3.js"></script>
-	<script src="js/onload.js"></script>
-	<script src="js/onloadslider.js"></script>
+	<script src="js/map1.js"></script>
+    <script src="js/map2.js"></script>
 	<script src="js/wNumb.js"></script>
 	
 	
@@ -58,8 +57,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>	
 	<script>
 	function start(){
-		press(d3.select(".btn1:nth-child(2)").node());
+		//press(d3.select(".btn1:nth-child(2)").node());
 		loadall();
+        loadall2();
 	}
     </script>
 	</head>
@@ -89,22 +89,16 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <br><br>
 			
-                                <span class="firstcharacter">T</span><p>The 2021 assembly election outcome returned to the predictable pattern of one the two major parties DMK and ADMK exchanging power every 5 years. The 2016 election was an anomaly in which, ADMK for the first time in 32 years and six assembly cycles, retained power, albeit tenuously. The reasons for the aberration was less to do with ADMK’s stellar performance, than to do with DMK’s failure to forge a winning coalition as our analysis pointed out.</p>
+                <span class="firstcharacter">T</span><p>The 2021 assembly election outcome returned to the predictable pattern of one the two major parties DMK and ADMK exchanging power every 5 years. The 2016 election was an anomaly in which, ADMK for the first time in 32 years and six assembly cycles, retained power, albeit tenuously. The reasons for the aberration was less to do with ADMK’s stellar performance, than to do with DMK’s failure to forge a winning coalition as our analysis pointed out.</p>
 		    
-<p>This election also answered some important questions about the future of DMK and ADMK, and indeed the future of the enduring bi-polar nature of Tamil Nadu politics. Both the parties contesting their first assembly elections since the deaths of their leaders M Karunanidhi and J Jayalalitha had questions around leadership, retention of core base and an unremitting representation of their former selves.</p>
-		    
-<p>While the consolidation of M K Stalin as the party supremo and the continuation of DMK as a single unified party was no surprise, Edappadi Palaniswamy’s performance as the ADMK’s leader was the most impressive. Not only did he have to contend with the anti-incumbency factor, he was embroiled in a long-drawn leadership shadow war with former deputy chief minister O. Paneerselvam and factions associated with Jayalalithaa’s confidante V.K. Sasikala.</p> 
-		    
-<p>Additionally there was a real danger from the ADMK splinter party led by V.K. Sasikala’s nephew T.T.V. Dhinakaran’s AMMK (Amma Makkal Munnetra Kazhagam). AMMK drew a blank and polled a mere 2.5% percentage votes suggesting ADMK did not suffer an erosion to its vote bank. Said a political observer, “Edappadi Palaniswami performed better than Jayalalithaa in her worst election year. In 2006, the AIADMK under Jayalalithaa secured 61 seats, and after ten years in power, Palaniswami had been able to bag 66 seats.” [1]</p>
-				
-<p>A key take away from a detailed analysis of the results indicate that while ADMK may have lost the election due to a combination of factors such anti-incumbency, party disunity, and a weaker coalition, they did not lose by a lot, while DMK’s victory is underwhelming.</p>
-				
+                <p>This election also answered some important questions about the future of DMK and ADMK, and indeed the future of the enduring bi-polar nature of Tamil Nadu politics. Both the parties contesting their first assembly elections since the deaths of their leaders M Karunanidhi and J Jayalalitha had questions around leadership, retention of core base and an unremitting representation of their former selves.</p>
+                            
+                <p>While the consolidation of M K Stalin as the party supremo and the continuation of DMK as a single unified party was no surprise, Edappadi Palaniswamy’s performance as the ADMK’s leader was the most impressive. Not only did he have to contend with the anti-incumbency factor, he was embroiled in a long-drawn leadership shadow war with former deputy chief minister O. Paneerselvam and factions associated with Jayalalithaa’s confidante V.K. Sasikala.</p> 
+                            
+                <p>Additionally there was a real danger from the ADMK splinter party led by V.K. Sasikala’s nephew T.T.V. Dhinakaran’s AMMK (Amma Makkal Munnetra Kazhagam). AMMK drew a blank and polled a mere 2.5% percentage votes suggesting ADMK did not suffer an erosion to its vote bank. Said a political observer, “Edappadi Palaniswami performed better than Jayalalithaa in her worst election year. In 2006, the AIADMK under Jayalalithaa secured 61 seats, and after ten years in power, Palaniswami had been able to bag 66 seats.” [1]</p>
+                                
+                <p>A key take away from a detailed analysis of the results indicate that while ADMK may have lost the election due to a combination of factors such anti-incumbency, party disunity, and a weaker coalition, they did not lose by a lot, while DMK’s victory is underwhelming.</p>
 			
-			<!--<div class="bttn">
-				<a href="#map1" class="btn page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                </a> 
-              </div>-->	
             </div>
         </div>
     </section>
@@ -157,11 +151,9 @@
 <div class="row" >
 <div class="col-md-6 quarter">
 <h2>Vote Share & Contested Vote Share</h2>
-
 <p>The DMK-led coalition won 159 out of the 234 assembly constituencies while the ADMK front won 75 of them. DMK individually contested 188 seats and won 133 of them for a vote share of 37.7%, up from 31.4% from 178 constituencies (won in 89) it contested in 2016. The ADMK on the other hand individually contested in 191 seats, winning 66 of them for a vote share of 33.3%, which was down from 40.8% from 234 (won in 136) it contested in 2016.</p>
 	
 <p>In terms of the ‘contested vote share’, DMK polled 45.5% in 188 seats, while the ADMK polled 40.5% in 191 seats. In 2016, DMK polled 41.1% and ADMK polled 40.8%, again indicating that while DMK marginally did improve its contested vote share, ADMK's remain unchanged.</p></div>
-	
 <div class="col-md-6 quarter">
 <div id="donut"></div>
 <script type="text/javascript" src="js/donut.js"></script>
@@ -173,13 +165,13 @@
         </div>
     </section>
 	
-	
+	<br><br>
 	<!--NOTA VS MARGIN-->
 	<section id="about1" class="container content-section text-center" style="padding-top:50px; padding-bottom:10px;" >
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
 			<h2>NOTA</h2>
-                <p>NOTA accounted for 0.75%, or 345591 of the total votes polled in the State. This is down from 1.3 per cent, or 561244 votes polled in the 2016 elections. In 13 constituencies the number of NOTA votes exceeded the margin of victory, also down from 25 constituencies in 2016. NOTA was introduced for the first time in the 2016 assembly elections, and it remains to be seen if the novelty of NOTA is wearing off or the electorate is becoming less dissatified with the available pool of candidates.</p>
+            <p>NOTA accounted for 0.75%, or 345591 of the total votes polled in the State. This is down from 1.3 per cent, or 561244 votes polled in the 2016 elections. In 13 constituencies the number of NOTA votes exceeded the margin of victory, also down from 25 constituencies in 2016. NOTA was introduced for the first time in the 2016 assembly elections, and it remains to be seen if the novelty of NOTA is wearing off or the electorate is becoming less dissatified with the available pool of candidates.</p>
 						
             </div>
         </div>
@@ -207,12 +199,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
 			<h2>VICTORY MARGINS</h2>
-                <p>The graph below plots the victory margins in comparison with the votes polled by NTK, MNM and AMMK, the 3 parties that combined to poll 11.6% of the total votes.</p>
-			<!--	<div class="bttn">
-				<a href="#graph4" class="btn page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                </a>  
-</div>	-->			
+            <p>The graph below plots the victory margins in comparison with the votes polled by NTK, MNM and AMMK, the 3 parties that combined to poll 11.6% of the total votes.</p>	
             </div>
         </div>
     </section>
@@ -222,42 +209,137 @@
             <div class="col-lg-8">
                 <div id="area4" align="left"></div>
 				<script src="js/all_combined.js"></script>
-				<!--<div class="bttn">
-                <a id = "graph1_p" href="#graph5" class="btn page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                </a>	
-            </div>-->
-			
-			
+
         </div>
 		</div>
     </section>
 	<div id="blah" style="position: relative; float:right; margin-right:50px;">
 <p style="color:#d3d3d3">Scroll right to see the full chart</p>			
             </div>
-			    	
+
+    <!--heat map-->
+<section id="map2" class="container content-section text-center" style="padding-bottom: 0px; padding-top:80px;">
+
+    <div class="row" >
+        <div class="col-lg-8 col-lg-offset-2">
+        <h2>WOMEN MARGINS</h2>
+            <p>As perhaps the closest assembly election ever, many constituencies saw narrow victory margins. While there were 16 constituencies with less than 1000 vote margin, only 4 constituencies had over 50,000 votes margin. The combined graph below plots the victory margins in comparison with the votes polled by PMK, the Third Front and NOTA.</p>		
+        </div>
+    </div>
+    <div class="row" style="padding-left:50px">
+        <div class="col-lg-2">
 	
+<div id="heat_map" >
+        
+<div class="container_heat">
+  <div class="slidebox">
+     <div class="slider" id="slide">
+          <div id="range"></div>
+    </div>
+    
+  </div>
+  <div class="map-1">
+  	<div class="toolt1 hidden"></div>
+  </div>
+  <div class="container">
+<div class="row">
+  <div class="col-md-2 leg" style="margin-left:-530px; margin-top:25px; ">
+    <div class="row">
+      <div class="col-md-4 leg">
+    <svg class="boxes" width="100%" height="15">
+      <rect width="100%" height="100%" style="fill:#d0e0f5; padding:0 !important;"></rect>
+    </svg>
+  </div>
+   <div class="col-md-4 leg">
+    <svg class="boxes" width="100%" height="15">
+      <rect width="100%" height="100%" style="fill:#7c9bc4; padding:0 !important;"></rect>
+    </svg>
+  </div> 
+  <div class="col-md-4 leg">
+    <svg class="boxes" width="100%" height="15">
+      <rect width="100%" height="100%" style="fill:#0a4591; padding:0 !important;"></rect>
+    </svg>
+  </div>
+  
+    
+    <span class="low">Low</span>
+    <span class="high">High</span>
+    </div>
+  </div>
+
+<div class="col-lg-2">
+<div id="heat_map" >
+<div class="container_heat">
+<div class="map-2">
+<div class="toolt2 hidden"></div>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-md-2 leg" style="margin-left:-530px; margin-top:25px; ">
+    <div class="row">
+    <div class="col-md-4 leg">
+        <svg class="boxes" width="100%" height="15">
+        <rect width="100%" height="100%" style="fill:#c3a7c7; padding:0 !important;"></rect>
+        </svg>
+    </div>
+    <div class="col-md-4 leg">
+        <svg class="boxes" width="100%" height="15">
+        <rect width="100%" height="100%" style="fill:#a57aaa; padding:0 !important;"></rect>
+        </svg>
+    </div> 
+    <div class="col-md-4 leg">
+        <svg class="boxes" width="100%" height="15">
+        <rect width="100%" height="100%" style="fill:#874e8e; padding:0 !important;"></rect>
+        </svg>
+    </div>
+    <span class="low">Low</span>
+    <span class="high">High</span>
+    </div>
+    </div>
+</div>
+</div>
+
+    </div>
+      
+</div>
+        
+</div>
+  </div>
+</div>
+
+          </div>
+		  
+</div>
+			
+	</div>
+	</div>
+
+</section>
+
+
+
+
 	
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center" style="padding-top:100px; padding-bottom:0px;">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>CONTRIBUTIONS AND CREDITS</h2>
-              <p> <span class="credit">Content and Design: </span> Venkatesh Rajamanickam<br>
-               <span class="credit"> Programming: </span>Varsha Venkatesh<br>
-	<span class="credit">Data Source: </span> <a href ="http://eci.nic.in/eci/eci.html" target="_blank">Election Commission of India</a><br> 
-<span class="credit"> Code template/components: </span> <a href ="https://d3js.org/" target="_blank">D3.js, </a><a href="http://getbootstrap.com/" target="_blank">Bootstrap, </a><a href="http://refreshless.com/nouislider/" target="_blank">noUSlider </a> and <a href="http://datameet.org/" target="_blank">Data{Meet}</a>
+<!-- Contact Section -->
+<section id="contact" class="container content-section text-center" style="padding-top:100px; padding-bottom:0px;">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>CONTRIBUTIONS AND CREDITS</h2>
+          <p> <span class="credit">Content and Design: </span> Venkatesh Rajamanickam<br>
+           <span class="credit"> Programming: </span>Varsha Venkatesh<br>
+<span class="credit">Data Source: </span> <a href ="http://eci.nic.in/eci/eci.html" target="_blank">Election Commission of India</a><br> 
+<span class="credit"> Code template/components: </span> <a href ="https://d3js.org/" target="_blank">D3.js, </a><a href="http://getbootstrap.com/" target="_blank">Bootstrap, </a>and <a href="http://datameet.org/" target="_blank">Data{Meet}</a>
 <br>
-		<span class="credit">Photo: </span>PTI<br>
-		      
-		 <span class="credit">Reference: </span> <a href="https://thewire.in/politics/tamil-nadu-assembly-election-results-tradition" target="_blank">[1] The Wire
+    <span class="credit">Photo: </span>PTI<br>
+          
+     <span class="credit">Reference: </span> <a href="https://thewire.in/politics/tamil-nadu-assembly-election-results-tradition" target="_blank">[1] The Wire
 </a><br>
 <span class="credit">Source Code: </span><a href="https://github.com/info-design-lab/TN2021" target="_blank">Github Repo</a><br><span class="credit">Contact: </span><a href="http://info-design-lab.github.io/" target="_blank">Information Design Lab</a> IDC IIT Bombay<br><span class="credit">Published on: </span>10 October 2021</span></p>
- 
-                
-            </div>
+
+            
         </div>
-    </section>
+    </div>
+</section>
 
     
 

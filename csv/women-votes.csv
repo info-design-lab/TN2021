@@ -1,0 +1,235 @@
+Consti#,Constituency,Margin
+1,Gummidipoondi,5.44
+2,Ponneri,9.58
+3,Tiruttani,5.16
+4,Thiruvallur,0.13
+5,Poonamallee,15.96
+6,Avadi,10.04
+7,Maduravoyal,12.6
+8,Ambattur,0.43
+9,Madavaram,0
+10,Thiruvottiyur,0.25
+11,Dr.Radhakrishnan Nagar,0
+12,Perambur,9.89
+13,Kolathur,0.27
+14,Villivakkam,0.89
+15,Thiru-Vi-Ka-Nagar,28.29
+16,Egmore,13.91
+17,Royapuram,6.56
+18,Harbour,0
+19,Chepauk-Thiruvallikeni,0
+20,Thousand Lights,35.56
+21,Anna Nagar,31.87
+22,Virugampakkam,0.05
+23,Saidapet,8.52
+24,Thiyagarayanagar,6.06
+25,Mylapore,16.31
+26,Velachery,8.73
+27,Shozhinganallur,0.11
+28,Alandur,32.22
+29,Sriperumbudur,0.21
+30,Pallavaram,8.14
+31,Tambaram,0.08
+32,Chengalpattu,47.81
+33,Thiruporur,12.62
+34,Cheyyur,43.94
+35,Madurantakam,51.75
+36,Uthiramerur,5.46
+37,Kancheepuram,0
+38,Arakkonam,8.54
+39,Sholingur,0
+40,Katpadi,0.1
+41,Ranipet,4.93
+42,Arcot,0
+43,Vellore,
+44,Anaikattu,4.11
+45,Kilvaithinankuppam,6.06
+46,Gudiyattam,98.18
+47,Vaniyambadi,0
+48,Ambur,5.71
+49,Jolarpet,0
+50,Tirupattur,6.73
+51,Uthangarai,0.06
+52,Bargur,0.42
+53,Krishnagiri,5.26
+54,Veppanahalli,0.14
+55,Hosur,47.3
+56,Thalli,2.43
+57,Palacode,3.73
+58,Pennagaram,0.7
+59,Dharmapuri,0
+60,Pappireddippatti,0
+61,Harur,5.51
+62,Chengam,5.39
+63,Tiruvannamalai,0
+64,Kilpennathur,0.11
+65,Kalasapakkam,0.19
+66,Polur,5.83
+67,Arani,4.74
+68,Cheyyar,0.2
+69,Vandavasi,4.99
+70,Gingee,0.08
+71,Mailam,4.71
+72,Tindivanam,43.88
+73,Vanur,4.71
+74,Villupuram,0
+75,Vikravandi,4.4
+76,Tirukkoyilur,0
+77,Ulundurpettai,3.79
+78,Rishivandiyam,0
+79,Sankarapuram,5.02
+80,Kallakurichi,7.82
+81,Gangavalli,49.34
+82,Attur,5.18
+83,Yercaud,56.69
+84,Omalur,0.11
+85,Mettur,2.65
+86,Edappadi,3.14
+87,Sankari,5.04
+88,Salem (West),4.92
+89,Salem (North),5.31
+90,Salem (South),0.63
+91,Veerapandi,51.12
+92,Rasipuram,5.85
+93,Senthamangalam,0.47
+94,Namakkal,6.49
+95,Paramathi-Velur,43.08
+96,Tiruchengodu,7.85
+97,Kumarapalayam,0
+98,Erode (East),0.49
+99,Erode (West),85.92
+100,Modakkurichi,51.11
+101,Dharapuram (SC),5.2
+102,Kangayam,0
+103,Perundurai,0
+104,Bhavani,0.15
+105,Anthiyur,6.94
+106,Gobichettipalayam,4.25
+107,Bhavanisagar,5.34
+108,Udhagamandalam,0
+109,Gudalur,0
+110,Coonoor,4.87
+111,Mettuppalayam,7.52
+112,Avanashi (SC),6.76
+113,Tiruppur (North),0
+114,Tiruppur (South),1.04
+115,Palladam,6.42
+116,Sulur,0
+117,Kavundampalayam,0.12
+118,Coimbatore (North),8.52
+119,Thondamuthur,34.47
+120,Coimbatore (South),4.24
+121,Singanallur,3.61
+122,Kinathukadavu,0
+123,Pollachi,5.26
+124,Valparai,4.75
+125,Udumalaipettai,3.43
+126,Madathukulam,0.33
+127,Palani,2.45
+128,Oddanchatram,13.81
+129,Athoor,59.44
+130,Nilakkottai,0.16
+131,Natham,0
+132,Dindigul,3.99
+133,Vedasandur,4.1
+134,,0.07
+135,Karur,58.81
+136,Krishnarayapuram,0.39
+137,Kulithalai,9.32
+138,Manapparai,9.71
+139,Srirangam,0.23
+140,Tiruchirappalli (West),0.15
+141,Tiruchirappalli (East),0
+142,Thiruverumbur,9.3
+143,Lalgudi,0.36
+144,Manachanallur,7.96
+145,Musiri,44.84
+146,Thuraiyur,8.65
+147,Perambalur,0.07
+148,Kunnam,5.48
+149,Ariyalur,2.29
+150,Jayankondam,6.8
+151,Tittagudi (SC),17.91
+152,Vridhachalam,0.13
+153,Neyveli,3.38
+154,Panruti,46.55
+155,Cuddalore,0.19
+156,Kurinjipadi,0.76
+157,Bhuvanagiri,3.88
+158,Chidambaram,5.8
+159,Kattumannarkoil(SC),7.13
+160,Sirkazhi,2.62
+161,Mayiladuthurai,0
+162,Poompuhar,10.61
+163,Nagapattinam,8.33
+164,Kilvelur,16.04
+165,Vedaranyam,0
+166,Thiruthuraipoondi,6.14
+167,Mannargudi,0
+168,Thiruvarur,5.63
+169,Nannilam,1.12
+170,Thiruvidaimarudur,9.04
+171,Kumbakonam,0
+172,Papanasam,6.06
+173,Thiruvaiyaru,0
+174,Thanjavur,44.31
+175,Orathanadu,0
+176,Pattukkottai,3.96
+177,Peravurani,0
+178,Gandharvakottai,0.19
+179,Viralimalai,0.59
+180,Pudukkottai,0
+181,Thirumayam,0
+182,Alangudi,0.52
+183,Aranthangi,0
+184,Karaikudi,11.32
+185,Tiruppattur,56.63
+186,Sivaganga,7.58
+187,Manamadurai,2.25
+188,Melur,9.86
+189,Madurai East,0.12
+190,Sholavandan,7.7
+191,Madurai North,38.31
+192,Madurai South,41.51
+193,Madurai Central,5.26
+194,Madurai West,0.07
+195,Thiruparankundram,0.05
+196,Thirumangalam,6.1
+197,Usilampatti,0
+198,Andipatti,26.79
+199,Periyakulam,0.91
+200,Bodinayakanur,44.95
+201,Cumbum,11.83
+202,Rajapalayam,0
+203,Srivilliputhur,8.45
+204,Sattur,10.12
+205,Sivakasi,41.78
+206,Virudhunagar,0
+207,Aruppukkottai,3.98
+208,Tiruchuli,49.09
+209,Paramakudi,1.13
+210,Tiruvadanai,0
+211,Ramanathapuram,0
+212,Mudhukulathur,0.06
+213,Vilathikulam,1.08
+214,Thoothukkudi,5.2
+215,Tiruchendur,44.07
+216,Srivaikuntam,2.08
+217,Ottapidaram,6.26
+218,Kovilpatti,40.85
+219,Sankarankovil,9.7
+220,Vasudevanallur,10.09
+221,Kadayanallur,7.24
+222,Tenkasi,0
+223,Alangulam,0.36
+224,Tirunelveli,0.42
+225,Ambasamudram,6.31
+226,Palayamkottai,0.66
+227,Nanguneri,11.22
+228,Radhapuram,0.91
+229,Kanniyakumari,59.44
+230,Nagercoil,0.65
+231,Colachel,5.44
+232,Padmanabhapuram,9.58
+233,Vilavancode,5.16
+234,Killiyoor,0.13
