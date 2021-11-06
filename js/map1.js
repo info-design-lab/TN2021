@@ -79,7 +79,11 @@ function loadall(){
                            .on("mouseout", function(d) {
 
                             tooltip.classed('hidden', true);
-                            d3.select(this).style("fill", function(d){return scale2(margin_data[+(d.properties.AC_NO)-1].Margin);})
+                            d3.select(this).style("fill", function(d){if(((margin_data[+(d.properties.AC_NO)-1]).Margin) == 0){
+                              return ("#ffffff");}
+                              else {
+                                return scale2((margin_data[+(d.properties.AC_NO)-1]).Margin);}
+                              })
                             .style("stroke","grey");
                             });
                           // .attr("transform", "translate(-400,200)");
