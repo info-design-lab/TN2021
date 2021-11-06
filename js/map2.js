@@ -22,11 +22,12 @@ function loadall2(){
         
         var scale2=d3.scale.linear()
                     .domain([0,65])
-                    .range(["#F9ACAF","#A91A28"]);
+                    //.range(["#ff73a3","#A51D4C"]);
+                    .range(["#f573ff","#710b79"]);
         
         var scale4=d3.scale.linear()
                     .domain([-50,0])
-                    .range(["#025BC5","#A1C1F7"]);
+                    .range(["#0231A1","#5BC7E3"]);
 
         var scale3=d3.scale.linear()
                     .domain([0,65])
@@ -61,7 +62,7 @@ function loadall2(){
         
                            .style("fill", function(d){
                              if(((margin_data[+(d.properties.AC_NO)-1]).Margin) == 0){
-                               return ("#c4c4c4");}
+                               return ("#F98811");}
                              else if (((margin_data[+(d.properties.AC_NO)-1]).Margin) < 0 ){
                               return scale4((margin_data[+(d.properties.AC_NO)-1]).Margin);
                              }
@@ -83,14 +84,22 @@ function loadall2(){
                                 .attr('style', 'left:' + (mouse[0] + 150) +
                                         'px; top:' + (mouse[1] +40) + 'px')
 
-                                .html("<b>"+d.properties.AC_NAME+"</b>"+"\nMargin(%): "+Math.abs(margin_data[+(d.properties.AC_NO)-1].Margin)+"\nWinner: "+win[+(d.properties.AC_NO)][2016]);
+                                .html(function(){
+                                  if (((margin_data[+(d.properties.AC_NO)-1]).Margin) < 0 ){
+                                    return ("<b>"+d.properties.AC_NAME+"</b>"+"\nVictory Margin: "+Math.abs(margin_data[+(d.properties.AC_NO)-1].Margin));
+                                  }
+                                  else {
+                                    return ("<b>"+d.properties.AC_NAME+"</b>"+"\nLoss Margin: "+Math.abs(margin_data[+(d.properties.AC_NO)-1].Margin));
+                                  }
+                                  
+                                })
                            })
                            .on("mouseout", function(d) {
 
                             tooltip.classed('hidden', true);
                             d3.select(this).style("fill", function(d){
                               if(((margin_data[+(d.properties.AC_NO)-1]).Margin) == 0){
-                                return ("#c4c4c4");}
+                                return ("#F98811");}
                               else if (((margin_data[+(d.properties.AC_NO)-1]).Margin) < 0 ){
                                return scale4((margin_data[+(d.properties.AC_NO)-1]).Margin);
                               }

@@ -47,6 +47,7 @@ function loadall(){
                             .scale(5000).translate(offset);    
                   var path = d3.geo.path()
                             .projection(projection);
+                  
                  // debugger;
                   svg.selectAll("path")
                            .data(topology.features)
@@ -57,7 +58,7 @@ function loadall(){
         
                            .style("fill", function(d){
                             if(((margin_data[+(d.properties.AC_NO)-1]).Margin) == 0){
-                              return ("#ffffff");}
+                              return ("#F98811");}
                               else {
                                 return scale2((margin_data[+(d.properties.AC_NO)-1]).Margin);}
                               })
@@ -74,13 +75,13 @@ function loadall(){
                                 .attr('style', 'left:' + (mouse[0] + 150) +
                                         'px; top:' + (mouse[1] +40) + 'px')
 
-                                .html("<b>"+d.properties.AC_NAME+"</b>"+"\nPercentage: "+margin_data[+(d.properties.AC_NO)-1].Margin+"\nWinner: "+win[+(d.properties.AC_NO)][2016]);
+                                .html("<b>"+d.properties.AC_NAME+"</b>"+"\nPercentage of Votes: "+margin_data[+(d.properties.AC_NO)-1].Margin);
                            })
                            .on("mouseout", function(d) {
 
                             tooltip.classed('hidden', true);
                             d3.select(this).style("fill", function(d){if(((margin_data[+(d.properties.AC_NO)-1]).Margin) == 0){
-                              return ("#ffffff");}
+                              return ("#F98811");}
                               else {
                                 return scale2((margin_data[+(d.properties.AC_NO)-1]).Margin);}
                               })
