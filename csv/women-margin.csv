@@ -32,8 +32,8 @@ Consti#,Constituency,Margin
 31,Tambaram,46.85
 32,Chengalpattu,-9.73
 33,Thiruporur,32.43
-34,Cheyyur,2.26000000000001
-35,Madurantakam,-1.91999999999999
+34,Cheyyur,2.26
+35,Madurantakam,-1.92
 36,Uthiramerur,38.96
 37,Kancheepuram,0
 38,Arakkonam,41.28
@@ -90,7 +90,7 @@ Consti#,Constituency,Margin
 89,Salem (North),0
 90,Salem (South),43.67
 91,Veerapandi,49.34
-92,Rasipuram,0.989999999999995
+92,Rasipuram,0.99
 93,Senthamangalam,39.66
 94,Namakkal,51.04
 95,Paramathi-Velur,40.47
@@ -98,15 +98,15 @@ Consti#,Constituency,Margin
 97,Kumarapalayam,0
 98,Erode (East),36.62
 99,Erode (West),48.73
-100,Modakkurichi,-0.149999999999999
-101,Dharapuram (SC),-0.719999999999999
+100,Modakkurichi,-0.15
+101,Dharapuram (SC),-0.72
 102,Kangayam,0
 103,Perundurai,0
 104,Bhavani,44.91
 105,Anthiyur,44.75
 106,Gobichettipalayam,45.21
 107,Bhavanisagar,45.2
-108,Udhagamandalam,
+108,Udhagamandalam,0
 109,Gudalur,0
 110,Coonoor,0
 111,Mettuppalayam,40.15
@@ -221,7 +221,7 @@ Consti#,Constituency,Margin
 220,Vasudevanallur,37
 221,Kadayanallur,38.14
 222,Tenkasi,0
-223,Alangulam,1.73999999999999
+223,Alangulam,1.74
 224,Tirunelveli,37
 225,Ambasamudram,40.23
 226,Palayamkottai,48.08
