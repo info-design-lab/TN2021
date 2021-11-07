@@ -18,10 +18,10 @@
 {
     color: white;
     text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
     
 }
 
@@ -179,7 +179,6 @@ a:focus {
     text-align: left; 
     background: url(../img/TN2021_front_image_colour.jpg) no-repeat bottom center scroll;
 	color: #fff;
-    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -192,8 +191,12 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 2.5em;
-	color: #FFFFFF;
+	color: #000;
+    background-color: rgba(255, 255, 255, 0.212);
 }
 
 
@@ -379,7 +382,7 @@ padding-bottom:150px;
 
 
 .btn{
-	color:#ffa500;
+	color:#000;
     border-radius: 0;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
