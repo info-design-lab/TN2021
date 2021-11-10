@@ -1,6 +1,6 @@
-
 function loadall2(){
         var tooltip = d3.select('.toolt2');
+        var tooltip2 = d3.select('.toolt1');
 
         var width =500,
             height = 550;
@@ -38,6 +38,9 @@ function loadall2(){
         d3.csv("csv/women-margin.csv",function(error,data){
                           cberror=error;
                           margin_data=data;
+        d3.csv("csv/women-votes.csv",function(error,data){
+              cberror=error;
+               agg_data=data;})
                           
         //debugger;
 
@@ -58,6 +61,9 @@ function loadall2(){
                            .enter()
                            .append("path")
                            .attr("d", path)
+                           .attr("class",function(d){
+                            return "a"+d.properties["AC_NO"];
+                          })
                            //debugger;
         
                            .style("fill", function(d){
@@ -76,27 +82,54 @@ function loadall2(){
                          })
                            .style("stroke","grey")
                            .on("mouseover",function(d){
-                            //var op=this.style("opacity")
-                           d3.select(this).style("stroke","orange");
-                           //debugger;
-						   var mouse=d3.mouse(d3.select(this).node());
-                           tooltip.classed('hidden', false)
-                                .attr('style', 'left:' + (mouse[0] + 150) +
-                                        'px; top:' + (mouse[1] +40) + 'px')
+                            var map1=d3.select(".map-1");
+                            var map2=d3.select(".map-2");
+                           mouse=d3.mouse(this);
+                           var consti=".a"+d.properties["AC_NO"];
+                           d3.select(this).style("stroke","red").style("stroke-width","2");
+                           
+                           map1.select(consti).style("stroke","red").style("stroke-width","2");
 
-                                .html(function(){
-                                  if (((margin_data[+(d.properties.AC_NO)-1]).Margin) < 0 ){
-                                    return ("<b>"+d.properties.AC_NAME+"</b>"+"\nVictory Margin: "+Math.abs(margin_data[+(d.properties.AC_NO)-1].Margin));
-                                  }
-                                  else {
-                                    return ("<b>"+d.properties.AC_NAME+"</b>"+"\nLoss Margin: "+Math.abs(margin_data[+(d.properties.AC_NO)-1].Margin));
-                                  }
-                                  
-                                })
+	                        
+                          map1.select(".toolt1")
+                          .classed('hidden', false)
+                          .attr('style', 'left:' + (mouse[0] + 50) +
+                                'px; top:' + (mouse[1] +40) + 'px')
+                          .html(function(){
+                            if (((agg_data[+(d.properties.AC_NO)-1]).Margin) == 0){
+                              return ("<b>"+d.properties.AC_NAME+"</b>"+"\nNo Candidates");}
+                            else {
+                              return("<b>"+d.properties.AC_NAME+"</b>"+"\nPercentage of Votes: "+agg_data[+(d.properties.AC_NO)-1].Margin)}
+                          
+                          });
+                          
+                          
+                          map2.select(".toolt2")
+                          .attr('style', 'left:' + (mouse[0] + 150) +
+                                'px; top:' + (mouse[1] +40) + 'px')
+                          .classed("hidden",false)
+                          .html(function(){
+                            if (((margin_data[+(d.properties.AC_NO)-1]).Margin) < 0 ){
+                              return ("<b>"+d.properties.AC_NAME+"</b>"+"\nVictory Margin: "+Math.abs(margin_data[+(d.properties.AC_NO)-1].Margin));
+                            }
+                            else if (((margin_data[+(d.properties.AC_NO)-1]).Margin) == 0){
+                              return ("<b>"+d.properties.AC_NAME+"</b>"+"\nNo Candidates");
+                            }
+                            else {
+                              return ("<b>"+d.properties.AC_NAME+"</b>"+"\nLoss Margin: "+Math.abs(margin_data[+(d.properties.AC_NO)-1].Margin));
+                            }
+                            
+                          });
+                          
                            })
+          
                            .on("mouseout", function(d) {
+                            var map1=d3.select(".map-1");
+                            var map2=d3.select(".map-2");
+                            var consti=".a"+d.properties["AC_NO"];
 
-                            tooltip.classed('hidden', true);
+                            map2.select(".toolt2").classed('hidden', true);
+                            map1.select(".toolt1").classed('hidden', true);
                             d3.select(this).style("fill", function(d){
                               if(((margin_data[+(d.properties.AC_NO)-1]).Margin) == 0){
                                 return ("#F98811");}
@@ -108,8 +141,12 @@ function loadall2(){
                                }
                              
                              })
-                            .style("stroke","grey");
+                             .style("stroke","grey").style("stroke-width","0.2")
+                            
+                            map1.select(consti).style("stroke","grey").style("stroke-width","0.2");
                             });
+
+                           
                           // .attr("transform", "translate(-400,200)");
             });
           
