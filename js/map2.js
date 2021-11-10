@@ -141,9 +141,9 @@ function loadall2(){
                                }
                              
                              })
-                             .style("stroke","grey").style("stroke-width","0.2")
+                             .style("stroke","grey").style("stroke-width","1")
                             
-                            map1.select(consti).style("stroke","grey").style("stroke-width","0.2");
+                            map1.select(consti).style("stroke","grey").style("stroke-width","1");
                             });
 
                            

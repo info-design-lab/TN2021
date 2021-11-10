@@ -126,9 +126,9 @@ function loadall(){
                             else {
                               return scale2((agg_data[+(d.properties.AC_NO)-1]).Margin);}
                             })
-                          .style("stroke","grey").style("stroke-width","0.2");
+                          .style("stroke","grey").style("stroke-width","1");
                           
-                          map2.select(consti).style("stroke","grey").style("stroke-width","0.2");
+                          map2.select(consti).style("stroke","grey").style("stroke-width","1");
 
                            });
             });
